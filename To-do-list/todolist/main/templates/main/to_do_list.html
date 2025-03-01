@@ -1,0 +1,17 @@
+{% load static%}
+<!Doctype html>
+<html>
+    <head>
+        <title>To-do List</title>
+        <link rel="stylesheet" href="{% static 'main/css/to_do_list.css'%}">
+    </head>
+    <body>
+        <div class="container">
+        <h1>To-Do List</h1>
+        <input type="text" id="task-input" placeholder="Add a new task...">
+        <button id="add-task-btn">Add Task</button>
+        <ul id="task-list"></ul>
+        </div>
+        <script src="{% static 'main/js/to_do_list.js' %}"></script>
+    </body>
+</html>
