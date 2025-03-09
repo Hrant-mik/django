@@ -12,7 +12,7 @@ function addTask() {
 
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "Delete";
-        deleteButton.classList.add("delete-btn");
+        deleteButton.classList.add("btn-danger");
         deleteButton.onclick = function() {
             li.remove();
         };
@@ -31,6 +31,7 @@ function addTask() {
         taskInput.value = "";
     }
 }
+
 
 addTaskButton.addEventListener('click', addTask);
 
